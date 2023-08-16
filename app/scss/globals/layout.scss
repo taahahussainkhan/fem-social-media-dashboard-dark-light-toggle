@@ -1,13 +1,13 @@
+@use '../util/breakpoints' as breakpoints;
 @use '../util' as *;
-
 .container {
-    padding: 0 rem(255px); // for mobile
-    max-width: rem(1110px);
+    padding: 0 rem(255, 16); // for mobile
+    max-width: rem(1110, 16);
     margin: 0 auto;
 
-    @include breakpoint(large)
-    {
+    @include breakpoints.breakpoint(large) {
         padding: 0;
     }
 }
+
 
